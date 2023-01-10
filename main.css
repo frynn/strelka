@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+:root {
+    --main-blue: #099aec;
+    --grey: #adadad;
+    --menu-toggle-color: #adadad;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-blue);
+    font-family: "Montserrat", sans-serif;
+    font-size: 500;
+    text-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.25) inset;
+    transition: transform 0.2s;
+}
+
+a:hover {
+    transform: scale(1.05);
+}
+
+.all-routes:hover {
+    color: var(--main-blue);
+    transition: ease-in-out 0.2s;
+}
+
+.button:hover {
+    transform: scale(1.05);
+    transition: ease-in-out 0.2s;
+}
+
+.grey-text {
+    color: var(--grey);
+    font-size: 14px;
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--main-blue);
+    text-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+section {
+    padding: 0 10%;
+}
+/* Header */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    height: 70px;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+ul {
+    display: flex;
+    column-gap: 20px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.nav-btns {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+select {
+    border-bottom: 1px solid #000;
+}
+
+.mobile-menu {
+    display: none;
+    transition: transform 0.2s;
+}
+
+.mobile-menu:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 767px) {
+    nav ul {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: inherit;
+        z-index: 10;
+        cursor: pointer;
+    }
+}
+
+/* main page */
+
+.main-screen {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input-block {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    width: 100%;
+    /* margin: 0 10%; */
+}
+
+input {
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.15) inset;
+
+    border: 0;
+    border-radius: 20px;
+    height: 40px;
+    width: 100%;
+    background: rgba(173, 173, 173, 0.2);
+}
+
+input:focus {
+    border-color: var(--main-blue);
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 40px;
+    border: 1px solid rgba(204, 204, 204, 1);
+    border-radius: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.25) inset;
+    color: var(--main-blue);
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+.block {
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    padding: 20px 30px;
+    align-items: center;
+}
+
+.block_text {
+    display: flex;
+    flex-direction: column;
+    font-size: 16x;
+}
+
+.search {
+    width: 25px;
+    height: 25px;
+}
+
+.popular-routes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.all-routes {
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--grey);
+    margin: 40px 0;
+}
+
+#allRoutesButton {
+    margin-bottom: 60px;
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 10%;
+    background: rgba(173, 173, 173, 0.15);
+    min-height: 70px;
+}

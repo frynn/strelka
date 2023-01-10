@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+:root {
+    --main-blue: #099aec;
+    --grey: #adadad;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-blue);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.25) inset;
+    transition: transform 0.2s;
+}
+
+a:hover {
+    transform: scale(1.05);
+}
+
+.grey-text {
+    color: var(--grey);
+    font-size: 16px;
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--main-blue);
+    text-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+section {
+    padding: 0 10%;
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    height: 70px;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+ul {
+    display: flex;
+    column-gap: 20px;
+}
+
+li {
+    list-style-type: none;
+    transition: trasnform 0.2s;
+}
+
+.nav-btns {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+select {
+    border-bottom: 1px solid #000;
+}
+
+/* Main section */
+
+.block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    padding: 20px 30px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.block_text {
+    display: flex;
+    flex-direction: row;
+    font-size: 16x;
+    gap: 30px;
+}
+
+.routes {
+    display: flex;
+    flex-direction: column;
+}
+
+.all-routes {
+    color: var(--grey);
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 10%;
+    min-height: 70px;
+    background: rgba(173, 173, 173, 0.15);
+    margin-top: 30px;
+}
+
+/* Scrollbar*/
+
+::-webkit-scrollbar-button {
+    background-repeat: no-repeat;
+    width: 5px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #64686c;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    background-color: #292929;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--main-blue);
+}
+
+::-webkit-resizer {
+    background-repeat: no-repeat;
+    width: 4px;
+    height: 0px;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
